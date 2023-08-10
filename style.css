@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  width: 100%;
+  background: #3d246c;
+  /* max-width: 570px; */
+  max-width: 670px;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  text-align: center;
+  border-radius: 20px;
+}
+/* Style Search box */
+.search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.search input {
+  background: #ffdbc3;
+  border-radius: 20px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  padding: 3px;
+  height: 40px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 15px;
+}
+#btnSearch {
+  font-size: 25px;
+  background: none;
+  color: #3d246c;
+  padding: 4px;
+}
+.search #btnSearch:hover {
+  color: #ffdbc3;
+}
+.search button {
+  width: 35px;
+  height: 35px;
+  background-color: #ffdbc3;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #9f91cc;
+  border-radius: 50%;
+}
+/* weather body */
+.weather {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  /* flex-direction:column; */
+  margin-block: 20px;
+}
+.weather-box {
+  margin-block: 20px;
+  text-align: center;
+}
+.weather-box .temp {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  color: #ffdbc3;
+}
+.weather-box .description {
+  font-size: 25px;
+  font-family: "Cousine", sans-serif;
+  font-weight: 500;
+  position: relative;
+  color: #ffdbc3;
+  text-transform: capitalize;
+}
+
+/* weather-box details */
+
+.weather-content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+}
+
+.icon {
+  color:#9F91CC;
+  margin-top: 15px;
+  font-size: 30px;
+}
+.weather-details {
+  width: 100%;
+  margin-top: 90px;
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.weather-details .text {
+  margin-bottom: 45px;
+  color: #9F91CC;
+  font-family: "Cousine", sans-serif;
+  font-size: 20px;
+  padding-bottom: 2%;
+}
+.weather-details span{
+    font-weight: 700;
+    color:#ffdbc3 ;
+}
+
+.error{
+  display: none;
+  margin-top:5rem;
+  color:#9f91cc;
+  font-size: small;
+
+}
+.error img{
+  height:325px;
+  width: auto;
+
+}
